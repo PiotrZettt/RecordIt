@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-$aqmg9y0flqgprmq$3ew$8e!-t912#i)h$*o-(f0_nyp^_gqr&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['recordIt-env.eba-5zus2pwk.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['recordIt-env.eba-5zus2pwk.us-west-2.elasticbeanstalk.com', '127.0.0.1']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'records'
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'RecordIt.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR/'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
