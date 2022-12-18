@@ -12,16 +12,4 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Django aws eb deployment
-      uses: einaregilsson/beanstalk-deploy@v21
-      with:
-        python_version: ${{ matrix.python_version }}
-        flake8: false
-        aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        django_path: sample_project
-        unit_testing: false
-        deploy: true
-        min_coverage: 10
-        postgresql_required: false
-        security_check: true
+    - run: eb deploy
