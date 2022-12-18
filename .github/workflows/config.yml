@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Django aws eb deployment
-      uses: joel-hanson/django-aws-eb-deploy@V1.1
+      uses: einaregilsson/beanstalk-deploy@v21
       with:
         python_version: ${{ matrix.python_version }}
         flake8: false
