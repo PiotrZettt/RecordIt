@@ -50,4 +50,4 @@ jobs:
         environment_name: Recordit-env
         version_label: 1.5
         region: "eu-west-2"
-        version_package: deploy.zip
+        deployment_package: deploy.zip
