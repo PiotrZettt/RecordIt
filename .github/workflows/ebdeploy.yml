@@ -24,7 +24,7 @@ jobs:
   
     - name: Run Tests
       env: 
-        SECRET_KEY: your-genereated-secret_key
+        SECRET_KEY: uwillneverguess
       run: |
         python manage.py test
 
