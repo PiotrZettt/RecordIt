@@ -4,5 +4,5 @@ from django.shortcuts import render, HttpResponse
 
 
 def home(request):
-    response = 'The GITHUB AWS Pipeline works fine'
+    response = 'The GITHUB AWS Pipeline works fine. Deployed on 19.12.2022'
     return HttpResponse(response)
